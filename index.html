@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleybel Fuentes</title>
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <a href="#"><h3>Eleybel</h3></a>
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+          <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="container">
+                <div class="info">
+                    <h1>Desarrolladora Front end</h1>
+                    <h3>Hola, Soy Eleybel</h3>
+                    <p>Una entusiasta desarrolladora frontend, apasionada por aprender y crecer en el campo del desarrollo web. Aunque no cuento con experiencia profesional, poseo conocimientos fundamentales en HTML, CSS y JavaScript, y estoy dedicada a mejorar mis habilidades día a día.</p>
+                    <a download="eleybelFuentesCv.pdf" href="doc/eleybelFuentesCv.pdf" class="btn btn-primary">Descargar CV<span class="material-icons-sharp">download</span></a>
+                </div>
+                <div class="perfil">
+                    <div class="circulo-exterior">
+                        <span class="material-icons-sharp">css</span>
+                        <span class="material-icons-sharp">javascript</span>
+                        <span class="material-icons-sharp">code</span>
+                        <span class="material-icons-sharp">html</span>
+                    </div>
+                    <div class="circulo-interior">
+                        <img src="images/eleybelFuentes.jpg" alt="foto1">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobremi" id="sobremi">
+          <h2>Sobre mí</h2>
+          <div class="container">
+            <div class="imagen">
+              <img src="images/eleybelFuentes1.jpg" alt="foto2">
+            </div>
+            <div class="info">
+              <p>Mi trayectoria profesional comenzó hace aproximadamente seis años en el campo del soporte técnico, con el firme propósito de adquirir experiencia y conocimientos en el ámbito de la tecnología. Con el tiempo, decidí trasladarme al área de redes y servidores, donde pude ampliar mis habilidades. Actualmente, me desempeño como Analista de Plataforma IT, contando con una mayor experiencia y una creciente motivación por seguir expandiendo mis conocimientos. Mi principal responsabilidad radica en garantizar el correcto funcionamiento y la eficiencia de los sistemas informáticos de la empresa. A lo largo de mi trayectoria, he tomado la decisión de redirigir mi carrera profesional con el fin de continuar aprendiendo y aportando la experiencia que he adquirido. Creo firmemente que el cambio es un indicador de capacidad de superación, y estoy convencida de que siempre podré aportar valor a cualquier organización en la que me desempeñe.</p>
+              <p>Soy una persona comprometida, dispuesta a asumir nuevos desafíos y buscar soluciones creativas. Mi objetivo principal es obtener experiencia en el campo del desarrollo frontend y convertirme en una profesional altamente competente y valiosa.</p>
+            </div>
+          </div>
+        </section>
+        <section class="proyectos-recientes" id="proyectos">
+          <div class="container">
+            <h4>Proyectos Recientes</h4>
+            <h2>Estos son algunos de mis proyectos más recientes</h2>
+            <div class="proyectos">
+              <div class="proyecto">
+                <div class="miniatura">
+                  <img src="images/profile-1.jpg" alt="proyecto1">
+                </div>
+                <h3>Pagina web de Servicios</h3>
+                <div class="accion">
+                  <a href="https://www.lussoporte.net/" target="_blank">Live Demo</a>
+                </div>
+              </div>
+              <!-- Final proyecto -->
+              <div class="proyecto">
+                <div class="miniatura">
+                  <img src="images/samanes.jpg" alt="proyecto1">
+                </div>
+                <h3>Página web de equipo de Beisbol</h3>
+                <div class="accion">
+                  <a href="https://samanesdearagua.com/ target="_blank">Live Demo</a>
+                </div>
+              </div>
+              <!-- Final proyecto -->
+              <div class="proyecto">
+                <div class="miniatura">
+                  <img src="images/certuche.png" alt="proyecto1">
+                </div>
+                <h3>Pagina web de Servicios de Asesorías Legales</h3>
+                <div class="accion">
+                  <a href="https://certucheasociados.com/" target="_blank">Live Demo</a>
+                </div>
+              </div>
+              <!-- Final proyecto -->
+              <div class="proyecto">
+                <div class="miniatura">
+                  <img src="images/lacasa.jpg" alt="proyecto1">
+                </div>
+                <h3>Pagina de Servicios</h3>
+                <div class="accion">
+                  <a href="https://lacasadelcompresor.com/" target="_blank">Live Demo</a>
+                </div>
+              </div>
+              <!-- Final proyecto -->
+            </div>
+          </div>
+        </section>
+        <section class="contacto" id="contacto">
+          <div class="fondo">
+            <div class="container">
+              <h2>Hablemos!</h2>
+              <p>Gracias por visitar mi sitio web. Si tiene alguna pregunta, por favor envíeme un mensaje y me pondré en contacto con usted lo antes posible. ¡Muchas gracias!</p>
+              <form action="https://formspree.io/f/mqkvzpeo" method="POST">
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+                <input type="email" name="Correo" placeholder="Correo" required>
+                <input type="text" name="Asunto" placeholder="Asunto" required>
+                <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container">
+        <a href="#"><h3>Eleybel</h3></a>
+        <ul>
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="redes-sociales">
+          <a href="https://github.com/CRISKI86" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="mailto:eleybelfuentes@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+          <a href="https://www.linkedin.com/in/eleybel-fuentes-919741106/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy; Eleybel Fuentes
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
